@@ -4,15 +4,39 @@
 <meta charset="UTF-8">
 <title>Document sécurisé</title>
 <style>
-body { font-family: Arial; display:flex; justify-content:center; align-items:center; height:100vh; background:#f4f4f4; }
-#box { background:white; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); text-align:center; }
-input { padding:10px; width:100%; margin-top:10px; }
-button { padding:10px; margin-top:15px; width:100%; }
+body { 
+    font-family: Arial; 
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    height:100vh; 
+    background: linear-gradient(135deg, #6a5af9, #b06cf9);
+}
+#box { 
+    background:white; 
+    padding:30px; 
+    border-radius:15px; 
+    text-align:center; 
+    width:300px;
+    box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+input { padding:10px; width:100%; margin-top:10px; border-radius:8px; border:1px solid #ccc; }
+button { 
+    padding:10px; 
+    margin-top:15px; 
+    width:100%; 
+    border:none; 
+    border-radius:8px; 
+    background:#6a5af9; 
+    color:white; 
+    font-weight:bold;
+}
 </style>
 </head>
 <body>
 <div id="box">
 <h2>🔐 Page protégée</h2>
+<p style="font-style: italic;">oh mais un vrai fan mérite une vraie surprise...</p>
 <p>Indice : artiste</p>
 <input type="password" id="pwd" placeholder="Mot de passe">
 <button onclick="check()">Accéder</button>
